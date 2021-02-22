@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Banking App: Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Style.css">
+    </head>
+    <body>
+        <div class='tab'>
+            <a href='LoginPage.html'><button>Login</button></a>
+            <a href='SignupPage.html'><button>Signup</button></a>
+            <a href="HomePage"><button>Home</button></a>
+            <a href="LogOut"><button>Logout</button></a> 
+        </div>
+        <div class="container">
+            <form name="LoginForm" action="UserDetails" method="POST">
+                <table cellpadding = 10px cellspacing = 10px>
+                    <caption><b><font size = 6 face = "calibri">Login</font></b></caption>
+                    <tr><td>Enter Email</td><td><input type = "text" name = "user_id"></td></tr>
+                    <tr><td>Enter Password</td><td><input type = "password" name = "user_pass"></td></tr>
+                    <tr><td colspan = 2 align = "center"><input type = "submit" value = "Login" name="submitbutton"></td></tr>
+                </table>
+            </form>
+            <a href="SignupPage.html">Click Here to Create New Account</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Style.css">
+    </head>
+    <body>
+        <div class='tab'>
+            <a href='LoginPage.html'><button>Login</button></a>
+            <a href='SignupPage.html'><button>Signup</button></a>
+            <a href="HomePage"><button>Home</button></a>
+            <a href="LogOut"><button>Logout</button></a> 
+        </div>
+        <div class="container" style="top: 10%;transform: translate(-50%);">
+            <form action="UserDetails" method="POST">
+                <table cellpadding = 10px cellspacing = 10px>
+                    <caption><b><font size = 6 face = "calibri">Create New Account</font></b></caption>
+                    <tr><td>Enter Name</td><td><input type = "text" name = "user_name" required></td></tr>
+                    <tr><td>Enter Email</td><td><input type = "text" name = "user_id" required></td></tr>
+                    <tr><td>Select Gender</td><td>
+                    <input type = "radio" name = "gender" value = "Male" required>Male
+                    <input type = "radio" name = "gender" value = "Female" required>Female</td></tr>
+                    <tr><td>Enter Password</td><td><input type = "password" name = "password1" required></td></tr>
+                    <tr><td>Confirm Password</td><td><input type = "password" name = "password2" required></td></tr>
+                    <tr><td colspan = 2 align = "center"><input type = "submit" value = "Create Account" name="submitbutton"></td></tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
