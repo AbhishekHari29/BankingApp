@@ -2,19 +2,31 @@
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
         <servlet-name>UserDetails</servlet-name>
-        <servlet-class>UserDetails</servlet-class>
+        <servlet-class>Servlet.UserDetails</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>LogOut</servlet-name>
-        <servlet-class>LogOut</servlet-class>
+        <servlet-class>Servlet.LogOut</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>HomePage</servlet-name>
-        <servlet-class>HomePage</servlet-class>
+        <servlet-class>Servlet.HomePage</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>BankOperation</servlet-name>
-        <servlet-class>BankOperation</servlet-class>
+        <servlet-class>Servlet.BankOperation</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CustomerForm</servlet-name>
+        <servlet-class>Servlet.CustomerForm</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InsertCustomerDetails</servlet-name>
+        <servlet-class>Servlet.InsertCustomerDetails</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CustomerHomePage</servlet-name>
+        <servlet-class>Servlet.CustomerHomePage</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>UserDetails</servlet-name>
@@ -31,6 +43,18 @@
     <servlet-mapping>
         <servlet-name>BankOperation</servlet-name>
         <url-pattern>/BankOperation</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CustomerForm</servlet-name>
+        <url-pattern>/CustomerForm</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InsertCustomerDetails</servlet-name>
+        <url-pattern>/InsertCustomerDetails</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CustomerHomePage</servlet-name>
+        <url-pattern>/CustomerHomePage</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

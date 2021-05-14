@@ -1,3 +1,5 @@
+package Servlet;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -6,7 +8,6 @@
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.servlet.http.Cookie;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -16,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author abhis
  */
-public class LogOut extends HttpServlet {
+public class CustomerHomePage extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -32,15 +33,15 @@ public class LogOut extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            response.setContentType("text/html");  
-            out.println("<html><head><title>Banking App</title><link rel='stylesheet' type='text/css' href='Style.css'></head><body>");
-            request.getRequestDispatcher("PageLink.html").include(request, response);  
-          
-            Cookie ck=new Cookie("uname","");  
-            ck.setMaxAge(0);  
-            response.addCookie(ck);  
-
-            out.print("you are successfully logged out!");
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet CustomerHomePage</title>");
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Servlet CustomerHomePage at " + request.getContextPath() + "</h1>");
+            out.println("</body>");
+            out.println("</html>");
         }
     }
 
